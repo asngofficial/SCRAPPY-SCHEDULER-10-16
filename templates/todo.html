@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>SCRAPPY SCHEDULER</title>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>TO-DO LIST</h1>
+            <img src="../static/images/649506.png" alt="UNT eagle logo" class="logo">
+        </div>
+
+        <h2 style="position: fixed; top: 50px;">Manage your tasks here.</h2>
+    </header>
+
+    <button id="openForm">+</button>
+
+    <div id="taskFormPopup" class="popup">
+        <!-- Controlled in scripts.js -->
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 style="color: black;">ADD TASK</h2>
+
+            <form id="taskForm" method="POST">
+
+                <div class="form-group">
+                    <label for="task_name">TASK NAME:</label>
+                    <input type="text" id="task_name" name="task_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="assigned_date">ASSIGNED DATE:</label>
+                    <input type="datetime-local" id="assigned_date" name="assigned_date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="due_date">DUE DATE:</label>
+                    <input type="datetime-local" id="due_date" name="due_date" required>
+                </div>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="taskList" class="task-list">
+        <h2 style="color:black;">Tasks</h2>
+        <ul id="taskItems"></ul>
+    </div>
+
+
+
+    <script src="../static/js/scripts.js"></script>
+</body>
+</html>

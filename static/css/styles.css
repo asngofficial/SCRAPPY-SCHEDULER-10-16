@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+* { /* Universal selector */
+    font-family: 'Oswald',sans-serif;
+}
+
+h1 {
+    font-size: 8vh;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 3vh;
+    color: #ffffff;
+}
+
+p {
+    font-size: 2vh;
+    color: #ffffff;
+}
+
+label {
+    font-size: 2vh;
+    color: #000000;
+}
+
+.PageLink {
+    font-size: 2vh;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    top: 200px;
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: -50px;
+}
+
+.logo {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 30px;
+}
+
+#openForm {
+    position: fixed;
+    top: 20px;
+    left: 95%;
+    transform: translateX(-50%);
+    width: 5vh;
+    height: 5vh;
+    font-size: 3vh;
+    border: none;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0; /* Change if needed */
+    left: 0; /* Change if needed */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.show {
+    display: flex; /* Displays the popup form when 'show' class is added */
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Reduce the top padding to bring elements closer to the top */
+.popup-content h2 {
+    margin-top: -40px; /* Reduce space above the "Add Task" heading */
+    margin-bottom: 20px; /* Adjust space below the heading */
+}
+
+.close { /* Affects the close "X" button when the pop-up shows*/
+    position: relative;
+    right: -160px;
+    top: -30px;
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+.form-group { /*ADD TASK*/
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: center;
+    margin-bottom: 10px; /* Adds space between form elements */
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input {
+    flex: 1;
+    width: 200px; /* Adjust the input width as needed */
+    padding: 5px;
+}
+
+body {
+    background-color: #77D777;
+}
+
+/* Task List Styles */
+.task-list {
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px;
+    max-width: 500px;
+    top: 100px;
+}
+
+.task-list h2 {
+    margin-top: 0;
+}
+
+#taskItems li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button.edit-btn, button.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 1rem;
+}
+
+    .form-signin .form-floating:focus-within {
+        z-index: 2;
+    }
+
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
